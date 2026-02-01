@@ -1,0 +1,4 @@
+variables:
+  var_catalog_name:
+    default: assetsbundle
+   
