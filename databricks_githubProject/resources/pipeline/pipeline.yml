@@ -1,0 +1,14 @@
+id: c7a92549-532f-41e8-9164-0dfd0b4e404a
+pipeline_type: WORKSPACE
+name: ETL_PL02
+libraries:
+  - glob:
+      include: ../../src/pipeline/ETL_PL02/transformations/**
+schema: bronze
+continuous: false
+development: false
+photon: true
+channel: CURRENT
+catalog: ${var.var_catalog_name}
+serverless: true
+root_path: ../../src/pipeline/ETL_PL02/transformations/**

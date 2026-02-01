@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    IngestionJob:
+      name: IngestionJob
+      tasks:
+        - task_key: assets_bundle
+          notebook_task:
+            notebook_path: /Workspace/Users/vigneshwarb8@gmail.com/Databricks_AssetsBundle/NB_01
+            base_parameters:
+              catalog_name: ${var.var_catalog_name}
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
