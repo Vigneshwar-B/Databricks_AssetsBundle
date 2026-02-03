@@ -49,5 +49,5 @@ targets:
       catalog: assetsbundles
       schema: prod
     permissions:
-      - group_name: admins
+        user_name: vigneshwarb8@gmail.com
         level: CAN_MANAGE
